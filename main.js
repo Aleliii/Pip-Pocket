@@ -17,22 +17,23 @@ window.addEventListener("load", () => {
 
 });
 
-const toggleSwitch = document.getElementById("switch-compute");
+window.addEventListener("DOMContentLoaded", () => {
+  const toggleSwitch = document.getElementById("switch-compute");
 
-const soloContainer = document.querySelector(".container-solo-compute");
-const autoContainer = document.querySelector(".container-auto-compute");
+  const soloContainer = document.querySelector(".container-solo-compute");
+  const autoContainer = document.querySelector(".container-auto-compute");
 
-toggleSwitch.addEventListener("change", function () {
-
-  if (this.checked) {
-    soloContainer.classList.add("hidden");
-    autoContainer.classList.remove("hidden");
-  } else {
-    soloContainer.classList.remove("hidden");
-    autoContainer.classList.add("hidden");
-  }
-
+  toggleSwitch.addEventListener("change", function () {
+    if (this.checked) {
+      soloContainer.classList.add("hidden");
+      autoContainer.classList.remove("hidden");
+    } else {
+      soloContainer.classList.remove("hidden");
+      autoContainer.classList.add("hidden");
+    }
+  });
 });
+
 
 //------- BUTTON SECTION -------
 
