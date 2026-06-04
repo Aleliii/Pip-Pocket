@@ -58,8 +58,8 @@ function autocalculate() {
 
   // PROFIT
   const profit1 = lot1 * 40 * 10;
-  const profit2 = profit1 + lot1 * 40 * 10;
-  const profit3 = profit1 + profit2 + lot1 * 40 * 10;
+  const profit2 = profit1 + lot2 * 40 * 10;
+  const profit3 = profit1 + profit2 + lot3 * 40 * 10;
 
   // RISK
   const risk =
